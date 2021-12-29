@@ -1,0 +1,27 @@
+module muxmodule(input logic [15:0] IR, input logic SR2MUX, SR1MUX, DRMUX,
+                output logic DR, SR1, SR2,
+                output logic [15:0] SR2val);
+
+    logic [4:0] operand_5, imm;
+    assign operand_5 = IR[4:0];
+    logic [15:0] SR2val;				// for mux outputs
+    logic [2:0] DR, SR1, SR2;
+    assign SR2 = IR[2:0];
+    sext_4 fivebits(.in(operand_5), .out(imm));
+
+    // MUXes
+    always_comb begin
+        case(SR2MUX) begin
+            1'b0: SR2val = imm;	
+            1'b1: SR2val = SR2_OUT;
+        endcase
+        case(SR1MUX) begin
+            1'b0: SR1 = IR[8:6];	
+            1'b1: SR1 = IR[11:9];
+        endcase
+        case(DRMUX) begin
+            1'b0: DR = IR[11:9];	
+            1'b1: DR = 3'b111;
+        endcase
+    end
+endmodule

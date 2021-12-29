@@ -1,0 +1,640 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/simulation/modelsim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1633725455
+!i10b 1
+!s100 ?`cf?@JnLzXM]RVn[CQE^1
+IL9=j62bIm3C11I1=8fF_[0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 adder_sv_unit
+S1
+R0
+w1633719018
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/adder.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/adder.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1633725455.000000
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/adder.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work {+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021}
+Z8 tCvgOpt 0
+vALU
+R1
+R2
+!i10b 1
+!s100 Rhgd3SXVeTSWILn0:jcNX0
+INQ]FVEb0`Snb11MT0j`Uf0
+R3
+!s105 ALU_sv_unit
+S1
+R0
+w1633667897
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/ALU.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/ALU.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/ALU.sv|
+!i113 1
+R6
+R7
+R8
+n@a@l@u
+vbenfinder
+R1
+R2
+!i10b 1
+!s100 GX6abkKE^<W9]47O@HaJ_1
+IZA2:``WBYkcc5Pi8`=mPV3
+R3
+!s105 ben_sv_unit
+S1
+R0
+w1633683009
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/ben.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/ben.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/ben.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/ben.sv|
+!i113 1
+R6
+R7
+R8
+vdatapath
+R1
+Z9 !s110 1633725456
+!i10b 1
+!s100 bBU[M_>aekX;K`BLio89R2
+I5`VE=_O35MnkiVVAWYQJl3
+R3
+!s105 datapath_sv_unit
+S1
+R0
+w1633718782
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/datapath.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/datapath.sv
+L0 5
+R4
+r1
+!s85 0
+31
+Z10 !s108 1633725456.000000
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/datapath.sv|
+!i113 1
+R6
+R7
+R8
+vHexDriver
+R1
+R9
+!i10b 1
+!s100 F7dDJLKONLDlAhT4ll@HA3
+IKSXOc2go:ZLSaRO0WKSmg1
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1632886057
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/HexDriver.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/HexDriver.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/HexDriver.sv|
+!i113 1
+R6
+R7
+R8
+n@hex@driver
+vISDU
+R1
+R9
+!i10b 1
+!s100 OT=ffh9mggk>b80elO1Q@0
+IzzWHg]WE<CGLOm?BaAKW31
+R3
+!s105 ISDU_sv_unit
+S1
+R0
+w1633724256
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/ISDU.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/ISDU.sv
+L0 19
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/ISDU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/ISDU.sv|
+!i113 1
+R6
+R7
+R8
+n@i@s@d@u
+vMem2IO
+R1
+R9
+!i10b 1
+!s100 ]Q:NN9GIUgNPLn_MG6U5k1
+IZMng_aQlj5WW_Vk3Tf4Qc2
+R3
+!s105 Mem2IO_sv_unit
+S1
+R0
+w1633033809
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/Mem2IO.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/Mem2IO.sv
+L0 16
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/Mem2IO.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/Mem2IO.sv|
+!i113 1
+R6
+R7
+R8
+n@mem2@i@o
+Xmemory_contents_sv_unit
+R1
+Z11 DXx4 work 6 SLC3_2 0 22 PF:dK`Oljn@iGhW1TD=323
+VX69U`i0T<hgJNjkNhZeG?0
+r1
+!s85 0
+31
+!i10b 1
+!s100 hnOMFJ;k;Fkemk][KlmY]3
+IX69U`i0T<hgJNjkNhZeG?0
+!i103 1
+S1
+R0
+Z12 w1633680294
+Z13 8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/memory_contents.sv
+Z14 FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/memory_contents.sv
+L0 15
+R4
+R10
+Z15 !s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/memory_contents.sv|
+Z16 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/memory_contents.sv|
+!i113 1
+R6
+R7
+R8
+vmemory_parser
+R1
+R11
+DXx4 work 23 memory_contents_sv_unit 0 22 X69U`i0T<hgJNjkNhZeG?0
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 ndiPB4gTIHg?5WZXdASHa3
+I@R80Bh]c3EeRA<MheN^Bo2
+!s105 memory_contents_sv_unit
+S1
+R0
+R12
+R13
+R14
+L0 17
+R4
+R10
+R15
+R16
+!i113 1
+R6
+R7
+R8
+vmemreg
+R1
+R2
+!i10b 1
+!s100 aDVQ7maoSnlMDRCX4`z@a2
+IbQ;1Z:G_0hM<O7>DZhAS_3
+R3
+!s105 memreg_sv_unit
+S1
+R0
+w1633681708
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/memreg.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/memreg.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/memreg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/memreg.sv|
+!i113 1
+R6
+R7
+R8
+vmuxmodule
+R1
+R2
+!i10b 1
+!s100 3GUKl`5FDc>VC`JhLQHBB3
+ISXN0A?8l:bX_9maQ<RC<g3
+R3
+!s105 muxmodule_sv_unit
+S1
+R0
+w1633652845
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/muxmodule.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/muxmodule.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/muxmodule.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/muxmodule.sv|
+!i113 1
+R6
+R7
+R8
+vreg_unit
+R1
+R2
+!i10b 1
+!s100 0e5?kJ]n4EjYkERT1f4hd3
+IBAUbKSKYaFDMIAeB<WaiZ1
+R3
+Z17 !s105 regfile_sv_unit
+S1
+R0
+Z18 w1633557179
+Z19 8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/regfile.sv
+Z20 FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/regfile.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+Z21 !s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/regfile.sv|
+Z22 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/regfile.sv|
+!i113 1
+R6
+R7
+R8
+vregister
+R1
+R2
+!i10b 1
+!s100 Wo]oznGaaUd0QJKcE]BDj1
+Ih_[]8he=8bm]:^4o88DVk0
+R3
+R17
+S1
+R0
+R18
+R19
+R20
+L0 93
+R4
+r1
+!s85 0
+31
+R5
+R21
+R22
+!i113 1
+R6
+R7
+R8
+vsext_10
+R1
+R2
+!i10b 1
+!s100 7C_H9b=i2^]hUg0]^8[D33
+IhaVY1lLMl`nJc1]L7RgZ]1
+R3
+Z23 !s105 sext_sv_unit
+S1
+R0
+Z24 w1633655456
+Z25 8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/sext.sv
+Z26 FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/sext.sv
+L0 47
+R4
+r1
+!s85 0
+31
+R5
+Z27 !s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/sext.sv|
+Z28 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/sext.sv|
+!i113 1
+R6
+R7
+R8
+vsext_4
+R1
+R2
+!i10b 1
+!s100 NPDkZeFTez_L=HhAdEl5Z0
+I1B[]8;hXOe>5lShH_Ze=l2
+R3
+R23
+S1
+R0
+R24
+R25
+R26
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R27
+R28
+!i113 1
+R6
+R7
+R8
+vsext_5
+R1
+R2
+!i10b 1
+!s100 08c[g6`M0U>lOR_cn7GOR1
+I=U47XAAfS1_?CWAGcXgA>1
+R3
+R23
+S1
+R0
+R24
+R25
+R26
+L0 18
+R4
+r1
+!s85 0
+31
+R5
+R27
+R28
+!i113 1
+R6
+R7
+R8
+vsext_8
+R1
+R2
+!i10b 1
+!s100 >=[E4DDP`NmfUSRY@M3AK3
+IgzQDRLkaUZOLPnQKOThHP3
+R3
+R23
+S1
+R0
+R24
+R25
+R26
+L0 32
+R4
+r1
+!s85 0
+31
+R5
+R27
+R28
+!i113 1
+R6
+R7
+R8
+vslc3
+R1
+R9
+!i10b 1
+!s100 aVLD:BB];[OK6i9l]3H1C1
+I@O=hQ?AQ:3Y7_Il3R87Zm3
+R3
+!s105 slc3_sv_unit
+S1
+R0
+w1633558099
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/slc3.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/slc3.sv
+L0 20
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/slc3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/slc3.sv|
+!i113 1
+R6
+R7
+R8
+XSLC3_2
+R1
+R2
+!i10b 1
+!s100 Cz8_^@QRefP31?j=Zf>lj0
+IPF:dK`Oljn@iGhW1TD=323
+VPF:dK`Oljn@iGhW1TD=323
+S1
+R0
+w1633636176
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/SLC3_2.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/SLC3_2.sv
+L0 24
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/SLC3_2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/SLC3_2.sv|
+!i113 1
+R6
+R7
+R8
+n@s@l@c3_2
+vslc3_testtop
+R1
+R9
+!i10b 1
+!s100 >S:iJ36S;=?gbKE9fJjhR0
+I?<_bCeI1MSj7=XKNPi6j?2
+R3
+!s105 slc3_testtop_sv_unit
+S1
+R0
+w1633640777
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/slc3_testtop.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/slc3_testtop.sv
+L0 4
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/slc3_testtop.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/slc3_testtop.sv|
+!i113 1
+R6
+R7
+R8
+vsync
+R1
+R2
+!i10b 1
+!s100 OHNUFN]797>kYzRL;ikZR2
+I`MEmSYhMS^<NE9TfP:aH=0
+R3
+Z29 !s105 synchronizers_sv_unit
+S1
+R0
+Z30 w1632871648
+Z31 8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/synchronizers.sv
+Z32 FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/synchronizers.sv
+L0 7
+R4
+r1
+!s85 0
+31
+R5
+Z33 !s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/synchronizers.sv|
+Z34 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/synchronizers.sv|
+!i113 1
+R6
+R7
+R8
+vsync_r0
+R1
+R2
+!i10b 1
+!s100 _Sn:CfHFjznVZen=7jc>C2
+I^W[j:Yj@IjB3zm<2U8:=Q3
+R3
+R29
+S1
+R0
+R30
+R31
+R32
+L0 21
+R4
+r1
+!s85 0
+31
+R5
+R33
+R34
+!i113 1
+R6
+R7
+R8
+vsync_r1
+R1
+R2
+!i10b 1
+!s100 4jfZd?z`MK2Y<NLFC0<QH2
+IA2fQ2bm8]koE5^hAA4G5`2
+R3
+R29
+S1
+R0
+R30
+R31
+R32
+L0 42
+R4
+r1
+!s85 0
+31
+R5
+R33
+R34
+!i113 1
+R6
+R7
+R8
+vtest_memory
+R1
+R2
+!i10b 1
+!s100 3NKXm?BP@1[ES]ULVgAB=3
+I9>nJkRB;fHQ?^_MBD0BNg2
+R3
+!s105 test_memory_sv_unit
+S1
+R0
+w1633677142
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/test_memory.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/test_memory.sv
+L0 28
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/test_memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/test_memory.sv|
+!i113 1
+R6
+R7
+R8
+vtestbench
+R1
+R9
+!i10b 1
+!s100 lV?eN`cCo]=a>@P[KHNXW1
+IzELJg`]1i>zRoJ84cmcGB2
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1633725364
+8C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/testbench.sv
+FC:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/testbench.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021|C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/testbench.sv|
+!i113 1
+R6
+R7
+R8

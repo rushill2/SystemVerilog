@@ -1,0 +1,57 @@
+// Game State controller
+
+// Reset state displays the start game prompt 
+
+// Game state involves the maze escape game
+
+// End state (TBA)
+
+module gamestate(input logic Clk, RST, ENTER, Completed,
+                output logic StartEnable, GameEnable);
+
+    enum logic [1:0] {Reset, Game, End} curr_state, next_state;
+
+    // default next state logic
+    always_ff @ (posedge Clk) begin
+        if(RST)
+            curr_state = Reset;
+        else
+            curr_state = next_state;
+    end
+
+    //next state logic for the game
+    always_comb begin
+        next_state = curr_state;
+        unique case (curr_state)
+            Reset: begin
+                 if (ENTER)
+                    next_state = Game;
+                else 
+                    next_state = curr_state
+            end
+
+            Game: begin
+                next_state = Game;
+            end
+        endcase
+    end
+
+    // control signals for states
+    always_comb begin
+        StartEnable = 1'b0;
+        GameEnable = 1'b0;
+        unique case (curr_state)
+            Reset: begin
+                StartEnable = 1'b1;
+                GameEnable = 1'b0;
+            end
+
+            Game: begin
+                StartEnable = 1'b0;
+                GameEnable = 1'b1;
+            end
+
+        endcase
+    end
+
+endmodule 

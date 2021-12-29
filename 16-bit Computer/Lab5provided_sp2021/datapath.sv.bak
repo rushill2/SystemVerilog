@@ -1,0 +1,110 @@
+// DataPath for the SLC3
+
+// Currently only contains the PC increment and IR load operations of the LC3-FSM
+
+module datapath(input logic	Clk, Reset, Run, Continue,      									// State transition signals
+	input logic LD_MAR, LD_MDR, LD_IR, LD_BEN, LD_CC, LD_REG, LD_PC, LD_LED,					// load signals
+	input logic SR2MUX, ADDR1MUX, MARMUX, DRMUX, SR1MUX,										// MUXes
+	input logic GatePC, GateMDR, GateALU, GateMARMUX,											// Gate signals
+	input logic MIO_EN,																			// Mem IO enable
+	input logic [1:0] PCMUX, ADDR2MUX, ALUK,													// MUX selectors
+	input logic [15:0] MDR_In, Data_to_SRAM,																	// MDR load val
+	output logic [15:0] MDR, IR, PC,																// MDR and IR Regs
+	output logic [15:0] MAR, 																	// MAR reg
+	output logic [9:0] LED,																		// LED
+	output logic BEN																			// Branch Enable
+	);
+
+	// TODO: Need to increment PC, Load MAR, MDR and IR - Week1
+
+	// variables and PCMUX inputs initialized
+	logic [15:0] next_PC;
+	logic [15:0] Bus;							// Data Bus
+	logic [15:0] temp;
+	// Building the PCMUX - selects between PC+1, and Bus, and Adder Output
+
+	// default PC logic to execute at every cycle. If Reset, set PC to 0.
+logic [15:0] PC_next;
+always_ff @(posedge Clk) begin
+	if (LD_PC)
+		PC <= next_PC;
+	else if (Reset)
+		PC <= 16'h0;
+end
+always_comb begin
+	case (PCMUX)
+		2'b00: next_PC = PC + 1;
+		2'b01: next_PC = Bus;
+		// 2'b10: next_PC = Adder;
+		default: next_PC = 16'hx; // Again should not be reachable
+	endcase
+end
+
+// Instruction register
+// Load IR from the bus if its load signal is enabled
+always_ff @(posedge Clk) begin: load_next_IR
+	if (Reset)
+		IR <= 16'h0;
+	else if (LD_IR)
+		IR <= MDR;
+end
+
+// Load MDR if LD_MDR is asserted (1).
+always_ff @(posedge Clk) begin
+	if (Reset)
+		MDR <= 16'h0;
+	else if (LD_MDR)
+		MDR <= MDR_In;
+end
+
+// Load MAR from Bus if LD_MAR is asserted (1)
+always_ff @(posedge Clk) begin
+	if (Reset)
+		MAR <= 16'h0;
+	else if (LD_MAR)
+		MAR <= PC;
+end
+//-------------------------------------------------------------------------------------------------------------------------------
+// Instantiate regfile
+logic [15:0] SR1_OUT, SR2_OUT;
+reg_unit gpr(.Din(Bus), .Reset(Reset), .Clk(Clk), .LD_REG(LD_REG), .DR(DR), .SR1(SR1), .SR2(SR2), .SR1_OUT(SR1_OUT), .SR2_OUT(SR2_OUT));
+
+//------------------------------------------------------------------------------------------------------------------------------
+logic [2:0] DR, SR1, SR2;
+logic [15:0] SR2val;
+muxmodule regmux(.IR(IR), .SR2MUX(SR2MUX), .DRMUX(DRMUX), .SR1MUX(SR1MUX), .DR(DR), .SR1(SR1), .SR2(SR2), .SR2val(SR2val))
+
+//-------------------------------------------------------------------------------------------------------------------------------
+// Adder
+logic [15:0] Adder;
+adder adderout(.ADDR2MUX(ADDR2MUX), .ADDR1MUX(ADDR1MUX), .IR(IR), .Adder(Adder));
+
+//------------------------------------------------------------------------------------------------------------------------------
+// ALU inst
+ALU alunit(.Clk(Clk), .Reset(Reset), .Run(Run), .Continue(Continue),.IR(IR),.SR2MUX(SR2MUX), .ADDR1MUX(ADDR1MUX), .MARMUX(MARMUX), 
+.DRMUX(DRMUX), .SR1MUX(SR1MUX),.PCMUX(PCMUX), .ADDR2MUX(ADDR2MUX), .ALUK(ALUK), .SR1_OUT(SR1_OUT), .SR2val(SR2val),.Bus(Bus));
+
+
+// Branch logic 
+logic N, Z, P;
+
+always_comb begin
+	N <= 0;
+	Z <= 0;
+	P <= 0;
+	if(LD_CC) begin
+		if(Bus == 16'd0)
+			Z <= 1;
+		else if (Bus[15] == 1)
+			N <= 1;
+		else 
+			P <= 1;
+	end
+end
+
+always_comb begin
+	if (LD_BEN)
+		BEN <= (IR[11] & N) | (IR[10] & Z) | (IR[9] & P);
+end
+
+endmodule

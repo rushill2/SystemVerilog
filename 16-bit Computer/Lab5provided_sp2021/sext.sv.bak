@@ -1,0 +1,25 @@
+module sext_4(input signed [4:0] in, output signed [15:0] out);
+
+    assign out = in;
+
+endmodule
+
+
+module sext_5(input signed [5:0] in, output signed [15:0] out);
+
+    assign out = in;
+
+endmodule
+
+
+module sext_8(input signed [8:0] in, output signed [15:0] out);
+
+    assign out = in;
+
+endmodule
+
+module sext_10(input signed [10:0] in, output signed [15:0] out);
+
+    assign out = in;
+
+endmodule

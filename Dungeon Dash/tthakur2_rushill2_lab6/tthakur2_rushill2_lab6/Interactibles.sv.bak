@@ -1,0 +1,113 @@
+// torches and ditches.
+
+// torches increase the player 
+
+module torches(input logic [9:0] DrawX, DrawY, BallX, BallY,
+               output logic torch0_on, torch1_on, torch2_on, torch3_on, 
+               output torch_count, 
+               output logic [9:0] diffx0, diffx1, diffx2, diffx3, diffx4, diffx5, 
+                output logic [9:0] diffy0, diffy1, diffy2, diffy3, diffy4, diffy5);
+
+    logic [9:0] centrex0, centrex1, centrex2, centrex3, centrex4, centrex5;
+    logic [9:0] centrey0, centrey1, centrey2, centrey3, centrey4, centrey5;
+    int torch_count;
+    logic torch0_on, torch1_on, torch2_on, torch3_on, torch4_on, torch5_on;
+    logic torch0_used, torch1_used, torch2_used, torch3_used;
+
+    assign diffx0 = DrawX - centrex0 + 4;
+    assign diffx1 = DrawX - centrex1 + 4;
+    assign diffx2 = DrawX - centrex2 + 4;
+    assign diffx3 = DrawX - centrex3 + 4;
+
+    assign diffy0 = DrawY - centrey0 + 4;
+    assign diffy1 = DrawY - centrey1 + 4;
+    assign diffy2 = DrawY - centrey2 + 4;
+    assign diffy3 = DrawY - centrey3 + 4;
+
+
+
+    // setting centre points for all torches so that they can be drawn 
+
+    assign centrex0 = 10'd167;
+    assign centrex1 = 10'd390;
+    assign centrex2 = 10'd78;
+    assign centrex3 = 10'd296;
+
+
+    assign centrey0 = 10'd61;
+    assign centrey1 = 10'd74;
+    assign centrey2 = 10'd405;
+    assign centrey3 = 10'd222;
+
+
+
+
+    // setting torch on for the color mapper
+    always_comb begin
+        if((DrawX >= centrex0 - 4 && DrawX <= centrex0 + 4) && (DrawY >= centrey0 - 4 && DrawY <= centrey0 + 4) && (!torch0_used)) begin
+            torch0_on = 1'b1;
+             torch1_on = 1'b0;
+              torch2_on = 1'b0;
+               torch3_on = 1'b0;
+        end
+
+        else if ((DrawX >= centrex1 - 4 && DrawX <= centrex1 + 4) && (DrawY >= centrey1 - 4 && DrawY <= centrey1 + 4)&& (!torch1_used)) begin
+             torch0_on = 1'b0;
+             torch1_on = 1'b1;
+              torch2_on = 1'b0;
+               torch3_on = 1'b0;
+        end
+
+        else if ((DrawX >= centrex2 - 4 && DrawX <= centrex2 + 4) && (DrawY >= centrey2 - 4 && DrawY <= centrey2 + 4)&& (!torch2_used)) begin
+             torch0_on = 1'b0;
+             torch1_on = 1'b0;
+              torch2_on = 1'b1;
+               torch3_on = 1'b0;
+        end
+
+        else if ((DrawX >= centrex3 - 4 && DrawX <= centrex3 + 4) && (DrawY >= centrey3 - 4 && DrawY <= centrey3 + 4)&& (!torch3_used)) begin
+             torch0_on = 1'b0;
+             torch1_on = 1'b0;
+              torch2_on = 1'b0;
+               torch3_on = 1'b1;
+        end
+
+        else begin
+             torch0_on = 1'b0;
+             torch1_on = 1'b0;
+              torch2_on = 1'b0;
+               torch3_on = 1'b0;
+        end
+    end
+
+    // check if player overlap
+    always_comb begin
+    torch0_used = torch0_used;
+    torch1_used = torch1_used;
+    torch2_used = torch2_used;
+    torch3_used = torch3_used;
+        if((BallX >= centrex0 - 2 && BallX <= centrex0 + 2) && (BallY >= centrey0 - 2 && BallY <= centrey0 + 2) ) begin
+            torch0_used = 1'b1;
+            torch_count = torch_count + 1;
+        end
+
+        else if((BallX >= centrex1 - 2 && BallX <= centrex1 + 2) && (BallY >= centrey1 - 2 && BallY <= centrey1 + 2) ) begin
+            torch1_used = 1'b1;
+            torch_count = torch_count + 1;
+        end
+
+        else if ((BallX >= centrex2 - 2 && BallX <= centrex2 + 2) && (BallY >= centrey2 - 2 && BallY <= centrey2 + 2) ) begin
+            torch2_used = 1'b1;
+            torch_count = torch_count + 1;
+        end
+
+        else if ((BallX >= centrex3 - 2 && BallX <= centrex3 + 2) && (BallY >= centrey3 - 2 && BallY <= centrey3 + 2) ) begin
+            torch3_used = 1'b1;
+            torch_count = torch_count + 1;
+        end
+    end
+endmodule
+
+module ditches (input logic [9:0]);
+
+endmodule

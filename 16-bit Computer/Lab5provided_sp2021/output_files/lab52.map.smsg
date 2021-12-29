@@ -1,0 +1,6 @@
+Warning (10268): Verilog HDL information at regfile.sv(37): always construct contains both blocking and non-blocking assignments File: C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/regfile.sv Line: 37
+Info (10281): Verilog HDL Declaration information at slc3_sramtop.sv(7): object "Run" differs only in case from object "RUN" in the same scope File: C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/slc3_sramtop.sv Line: 7
+Info (10281): Verilog HDL Declaration information at slc3_sramtop.sv(7): object "Continue" differs only in case from object "CONTINUE" in the same scope File: C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/slc3_sramtop.sv Line: 7
+Warning (10273): Verilog HDL warning at HexDriver.sv(24): extended using "x" or "z" File: C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/HexDriver.sv Line: 24
+Warning (10273): Verilog HDL warning at datapath.sv(40): extended using "x" or "z" File: C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/datapath.sv Line: 40
+Warning (10273): Verilog HDL warning at datapath.sv(107): extended using "x" or "z" File: C:/Users/rushi/Desktop/WORK/Fall 21/ECE385/385SV/Lab5provided_sp2021/datapath.sv Line: 107
